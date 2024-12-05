@@ -1,98 +1,95 @@
+/* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: #f4f4f4;
+  background-color: #f9f9f9;
   color: #333;
 }
 
+/* Header Section */
 header {
-  background: linear-gradient(to right, #333, #555);
-  color: white;
+  background: #007bff;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
-  padding: 2rem 0;
 }
 
 header h1 {
-  font-size: 3rem;
-}
-
-header p {
-  font-size: 1.2rem;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  font-size: 2.5em;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 15px;
+header nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-nav ul li a {
-  color: white;
+header nav a {
+  color: #fff;
   text-decoration: none;
-  font-size: 1rem;
+  font-weight: bold;
 }
 
+/* Sections */
 .section {
-  padding: 50px 20px;
+  padding: 40px 20px;
+}
+
+.section h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .bg-light {
-  background-color: #f9f9f9;
+  background: #f4f4f4;
 }
 
 .skills-grid, .projects-grid {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .skill-card, .project-card {
-  background: white;
-  border: 1px solid #ddd;
+  background: #fff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 5px;
   width: 300px;
   text-align: center;
 }
 
 .skill-card i {
-  font-size: 3rem;
-  color: #555;
+  font-size: 2em;
+  color: #007bff;
 }
 
-form {
-  max-width: 500px;
-  margin: 20px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
+/* Contact Section */
 form input, form textarea, form button {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
+form button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
-footer a {
-  color: #00f;
-  text-decoration: none;
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
 }

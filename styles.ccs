@@ -1,20 +1,21 @@
-/* Global Styles */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
 }
 
 header {
-  background: #333;
-  color: #fff;
-  padding: 1.5rem 0;
+  background: linear-gradient(to right, #333, #555);
+  color: white;
   text-align: center;
+  padding: 2rem 0;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 header p {
@@ -23,67 +24,75 @@ header p {
 
 nav ul {
   list-style: none;
-  margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
+  margin: 0;
 }
 
 nav ul li {
-  margin: 0 1rem;
+  display: inline;
+  margin: 0 15px;
 }
 
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 .section {
-  padding: 2rem 0;
-  text-align: center;
+  padding: 50px 20px;
 }
 
 .bg-light {
-  background: #f4f4f4;
+  background-color: #f9f9f9;
 }
 
 .skills-grid, .projects-grid {
   display: flex;
+  gap: 20px;
   justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
 }
 
 .skill-card, .project-card {
-  background: #fff;
+  background: white;
   border: 1px solid #ddd;
-  padding: 1rem;
-  width: 300px;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
 }
 
 .skill-card i {
-  font-size: 2rem;
-  color: #333;
+  font-size: 3rem;
+  color: #555;
 }
 
-button {
-  background: #333;
-  color: #fff;
-  border: none;
-  padding: 0.7rem 1.5rem;
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #444;
 }
 
 footer {
   background: #333;
-  color: #fff;
-  padding: 1rem 0;
+  color: white;
   text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #00f;
+  text-decoration: none;
 }
